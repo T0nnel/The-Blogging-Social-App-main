@@ -1,6 +1,5 @@
 import React from "react";
 import "./sidebar.css"
-import { RssFeed, Chat, PlayCircleFilledOutlined, Group, Bookmark, HelpOutline, WorkOutline, Event, School } from '@mui/icons-material'
 
 export default function Sidebar() {
     return (
