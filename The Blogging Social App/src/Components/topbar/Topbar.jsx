@@ -2,6 +2,7 @@ import React from 'react'
 import "./Topbar.css"
 import { Search, Person, Chat, Notifications } from '@mui/icons-material'
 import SearchBar from '../search'
+import { Link } from 'react-router-dom'
 
 export default function Topbar() {
     return (
@@ -19,7 +20,7 @@ export default function Topbar() {
                 </div>
                 <div className="topbarIcons">
                     <div className="topbarIconItem">
-                    <a href="/profile"> <Person /></a>
+                    <li><Link to ={"/profile"}> <Person /></Link></li>
                     </div>
                     {/* <div className="topbarIconItem">
                         <Chat />
@@ -30,7 +31,7 @@ export default function Topbar() {
                         <span className="topbarIconBadge"></span>
                     </div> */}
                 </div>
-               <a href="/login"><img src='../src/images/person/1.jpeg' alt='an image of a girl' className='topbarImg'/></a>
+              <li><Link to ={"/login"}><img src='../src/images/person/1.jpeg' alt='an image of a girl' className='topbarImg'/></Link></li>
             </div>
         </div>
     )
