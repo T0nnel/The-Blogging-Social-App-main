@@ -10,7 +10,6 @@ import './index.css'
 import Login from './Pages/login/Login.jsx';
 import Profile from './Pages/profile/Profile.jsx';
 import Register from './Pages/register/Register.jsx';
-import Home from './Pages/home/home.jsx';
 
 
 function Main() {
@@ -18,7 +17,7 @@ function Main() {
     <>
       <BrowserRouter basename='/The-Blogging-Social-App-main'> 
         <Routes>
-            <Route exact path='/' element={<Home/>}/>
+            <Route exact path='/' element={<App/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/Profile' element={<Profile/>}/>
             <Route path='/register' element={<Register/>}/>
