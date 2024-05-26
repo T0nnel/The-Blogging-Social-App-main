@@ -13,7 +13,7 @@ import Register from './Pages/register/Register.jsx';
 import Home from './Pages/home/home.jsx';
 
 
-function App() {
+function Main() {
   return (
     <>
       <BrowserRouter basename='/The-Blogging-Social-App-main'> 
@@ -29,5 +29,3 @@ function App() {
     </>
   );
 }
-
-export default App;
